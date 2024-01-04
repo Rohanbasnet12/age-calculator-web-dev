@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/styles/style.css">
+  <link rel="stylesheet" href="./public/styles/responsive.css">
+  <!-- ADDING BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Rohan Basnet | Age calculator app</title>
+</head>
+
+<body>
+  <!-- MAIN SECTION -->
+  <div id="main" class="d-flex align-items-center">
+    <div class="container p-5">
+
+      <!-- TOP SECTION OF THE CONTAINER -->
+      <div class="top_container box">
+        <form>
+
+          <div class="top_form">
+            <!-- FIRST INPUT FIELD WITH NAME -->
+
+            <label class="flexBox">
+              Day
+              <input type="text" placeholder="DD" id="day" name="day" required autocomplete="off">
+            </label>
+            <!-- SECOND INPUT FIELD WITH NAME -->
+
+            <label class="flexBox">
+              Month
+              <input type="text" placeholder="MM" id="month" name="month" required autocomplete="off">
+            </label>
+            <!-- THIRD INPUT FIELD WITH NAME -->
+
+            <label class="flexBox">
+              Year
+              <input type="text" placeholder="YYYY" id="year" name="year" required autocomplete="off">
+            </label>
+          </div>
+
+          <div class="bottom_form">
+            <button class="btn rounded-circle d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+                <g fill="none" stroke="#FFF" stroke-width="2">
+                  <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+      </div>
+
+      <!-- BOTTOM SECTION OF THE CONTAINER -->
+      <div class="bottom_container box">
+        <div id="show">
+          <h1><span id="showYear">--</span> years</h1>
+          <h1><span id="showMonth">--</span> months</h1>
+          <h1><span id="showDay">--</span> days</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- LINK JS -->
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Bootstrap JS (including popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Your custom JavaScript file -->
+  <script src="./public/js/app.js"></script>
+
+</body>
+
+
+</html>

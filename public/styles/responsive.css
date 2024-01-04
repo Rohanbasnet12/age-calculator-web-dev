@@ -1,0 +1,33 @@
+@media (max-width: 605px) {
+    #main {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container {
+        width: 90vw !important;
+        height: 70vh !important;
+        border-radius: 1em 1em 5em 1em;
+    }
+
+    .box {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 805px) {
+    .btn {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .bottom_form {
+        top: 100%;
+        right: 32%;
+        transform: translate(-50%, -50%);
+    }
+
+    .bottom_container {
+        padding-top: 2.5rem;
+    }
+}

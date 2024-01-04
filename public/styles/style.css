@@ -1,0 +1,123 @@
+/* LINKS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--PRIMARY-FONT);
+}
+
+/* CSS VARIABLES */
+:root {
+    /* PRIMARY COLORS */
+    --PURPLE: hsl(259, 100%, 65%);
+    --LIGHTRED: hsl(0, 100%, 67%);
+
+
+    /* NEUTRAL COLORS */
+    --WHITE: hsl(0, 0%, 100%);
+    --OFFWHITE: hsl(0, 0%, 94%);
+    --LIGHTGREY: hsl(0, 0%, 86%);
+    --SMOKEGREY: hsl(0, 1%, 44%);
+    --OFFBLACK: hsl(0, 0%, 8%);
+
+    /* FONTS */
+    --INPUT-FSIZE: 32px;
+    --PRIMARY-FONT: 'Poppins', sans-serif;
+}
+
+/* UTILS */
+.flexBox {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.box {
+    width: 45vw;
+}
+
+/* GENERAL STYLES */
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* STYLING MAIN SECTION */
+#main {
+    width: 100%;
+    height: 100vh;
+    background: var(--LIGHTGREY);
+}
+
+
+/* STYLING CONTAINER SECTION */
+.container {
+    width: 55vw !important;
+    height: 60vh;
+    border-radius: 1em 1em 8em 1em;
+    display: grid;
+    grid-template-rows: 2fr 4fr;
+    /* overflow: hidden; */
+    box-shadow: .5em .5em 1.5em var(--OFFWHITE);
+    background: var(--WHITE);
+}
+
+/* SYLING TOP CONTAINER */
+.top_container {
+    border-bottom: 1px solid var(--LIGHTGREY);
+    position: relative;
+}
+
+.top_form {
+    display: flex;
+    gap: 1rem;
+}
+
+.top_form label {
+    color: var(--SMOKEGREY);
+}
+
+.top_form input {
+    outline: none;
+    border: 1px solid var(--SMOKEGREY);
+    padding: .3em 0.5em;
+    cursor: pointer;
+    border-radius: .2em;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.bottom_form {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+}
+
+.btn {
+    width: 5.46rem;
+    height: 5.46rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in !important;
+    background: var(--PURPLE) !important;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* STYLING BOTTOM CONTAINER */
+#show span {
+    color: var(--PURPLE);
+}
+
+#show h1 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: bolder;
+}
