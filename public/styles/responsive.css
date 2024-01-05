@@ -10,8 +10,17 @@
         border-radius: 1em 1em 5em 1em;
     }
 
+    input {
+        width: 20vw;
+        margin-right: 1rem;
+    }
+
     .box {
         width: 70vw;
+    }
+
+    .flexBox {
+        width: 100%;
     }
 }
 
@@ -25,6 +34,10 @@
         top: 100%;
         right: 32%;
         transform: translate(-50%, -50%);
+    }
+
+    .top_container {
+        padding-bottom: 2.5rem;
     }
 
     .bottom_container {
